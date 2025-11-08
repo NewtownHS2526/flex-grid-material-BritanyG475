@@ -1,0 +1,49 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+/* FLEXBOX */
+.flex-container {
+  display: flex;
+  padding: 15px 25px;
+  gap: 10px;
+}
+
+.flex-item {
+  padding: 10px 5px;
+  border: 2px solid purple;
+}
+
+/* Followed the instructions from comments */
+#flex-one {
+  flex-grow: 2;
+  order: 1;
+}
+
+#flex-two {
+  flex-shrink: 1;
+  order: 0;
+}
+
+#flex-three {
+  order: 2;
+  align-self: center;
+}
+
+#flex-four {
+  order: -1;
+}
+
+/* GRID */
+.grid-container {
+  display: grid;
+  padding: 15px 25px;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr); /* This is the missing instruction */
+}
+
+.grid-item {
+  padding: 10px 5px;
+  border: 2px solid green;
+}
